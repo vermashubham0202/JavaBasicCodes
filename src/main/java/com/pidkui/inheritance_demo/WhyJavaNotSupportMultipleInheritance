@@ -1,0 +1,37 @@
+-> Java not support multiple inheritance because of diamond problem.
+
+Explaining Diamond problem :
+    Let we have two classes A and B, and they both have same method name show().
+    Then class C extends both A and B. (Let Imagine Java supports Multiple Inheritance)
+
+class A {
+	public void show() {
+		System.out.println("In show A");
+	}
+}
+
+class B {
+	public void show() {
+		System.out.println("In show B");
+	}
+}
+
+class C extends A, B {
+}
+
+class MainClass {
+	public static void main(String[] args) {
+		C obj = new C();
+		obj.show();
+	}
+}
+
+Now, we created an object of class C and that is calling show() method. Which show() will be called?
+This will create confusion for compiler, that's why java not supports Multiple Inheritance.
+
+-> Multiple inheritance can create problem with interfaces also. (Because in Java 1.8 we can define the
+	methods in interfaces using 'default' keyword)
+	The same diamond problem can also arise there.
+	
+-> To solve the diamond problem in interfaces, the class which is going to implement both the interfaces
+	has to define the same name method inside it.

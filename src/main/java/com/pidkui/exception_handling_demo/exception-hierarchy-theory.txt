@@ -1,0 +1,18 @@
+-> Throwable : (This class is used to handle all your Errors and Exceptions)
+		-> Exception (can be handled)
+					-> Checked Exception (user can handle it)
+								Eg. IOException, SQLException
+					-> Unchecked Exception (user can't handle it)
+								Eg. RuntimeException
+										- ArrayOutOfBoundsException
+										- FileNotFoundException
+										- InputMismatchException
+										- ArithmeticException
+		-> Error (can't be handled)
+		
+-> Exception is the super class of all the exception classes, like ArithmeticException, IOException etc.
+-> We can have multiple catch with one try.
+		
+-> Statement :
+		-> Normal statement
+		-> Critical statement

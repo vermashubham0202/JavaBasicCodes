@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.16" class="java.beans.XMLDecoder">
+ <object class="com.pidkui.serialization_deserialization_demo.College">
+  <void property="students">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.pidkui.serialization_deserialization_demo.Student">
+      <void property="name">
+       <string>Yogita</string>
+      </void>
+      <void property="rollNo">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.pidkui.serialization_deserialization_demo.Student">
+      <void property="name">
+       <string>Shubham</string>
+      </void>
+      <void property="rollNo">
+       <int>2</int>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

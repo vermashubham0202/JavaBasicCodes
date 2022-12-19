@@ -1,0 +1,20 @@
+-> String is immutable because it is increasing the performance of the system.
+-> Two objects can share same reference of String Pool, if both of them have same value.
+-> It is also called as Fly Weight Pattern (If possible then re-use the object).
+
+-> Immutable doesn't mean that you can't change the value.
+-> str = "Hello"; can be done. Reference will be changed in stack but old value still remain in heap.
+   But it will crate new set of value (which is "Hello" there) in your string pool.
+   
+-> Mutability can be achieved using StringBuffer and Immutability is your String class.
+
+-> if we create String like below:
+		String str = new String("Shubham"); 
+		
+		-> It will create a new object in heap but still string will be created in String Pool of heap
+		   and the created object with the help of 'new' keyword will contain that address of String Pool
+		   where that string is present, so it is indirectly using String pool.
+		   
+-> We can make String mutable by using:
+	* StringBuffer
+	* StringBuilder
